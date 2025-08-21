@@ -24,7 +24,7 @@ public class CustomerController {
         return ResponseEntity.ok(response);
     }
 
-    @GetMapping("/findBy")
+    @GetMapping("/findById")
     public ResponseEntity<CustomerDTO> findById(@RequestParam String email){
         CustomerDTO response = customerService.findByEmail(email);
         return ResponseEntity.ok(response);
@@ -43,5 +43,10 @@ public class CustomerController {
     @GetMapping("/")
     public String login(){
         return "Hey you are in login Page.";
+    }
+
+    @GetMapping("/pb")
+    public String vaishPage(){
+        return "Hello Vaishhh PB";
     }
 }
