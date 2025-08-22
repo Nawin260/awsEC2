@@ -45,8 +45,4 @@ public class CustomerController {
         return "Hey you are in login Page.";
     }
 
-    @GetMapping("/pb")
-    public String vaishPage(){
-        return "Hello Vaishhh PB";
-    }
 }
